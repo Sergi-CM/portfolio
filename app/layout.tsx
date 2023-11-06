@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./resetStyles.scss";
+import "@/styles/resetStyles.scss";
+import styles from "./layout.module.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className} ${styles.body}`}>
+        <div className={styles["bg-gradient-1"]}></div>
+        <div className={styles["bg-gradient-2"]}></div>
+        {children}
+      </body>
     </html>
   );
 }
