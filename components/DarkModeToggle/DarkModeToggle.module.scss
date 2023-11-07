@@ -1,0 +1,8 @@
+@import "styles/variables.scss";
+
+.toggle-button {
+  color: $light-text-primary;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 40px;
+}
