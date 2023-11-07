@@ -1,20 +1,5 @@
 @import "styles/variables.scss";
-@import "styles/mixins.scss";
 
 .body {
   background-color: $light-bg-main;
-}
-
-.bg-gradient-1 {
-  @include bg-gradient;
-  top: 50%;
-  left: 20%;
-  background-color: $light-bg-gradient-1;
-}
-
-.bg-gradient-2 {
-  @include bg-gradient;
-  top: 30%;
-  right: 20%;
-  background-color: $light-bg-gradient-2;
 }
