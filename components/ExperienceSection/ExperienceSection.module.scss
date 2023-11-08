@@ -1,0 +1,9 @@
+@import "styles/variables.scss";
+
+.section {
+  width: $body-width;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}

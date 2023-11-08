@@ -1,0 +1,23 @@
+@import "styles/variables.scss";
+
+.wrapper {
+  display: inline-block;
+  margin-bottom: 40px;
+
+  &::after {
+    display: block;
+    content: "";
+    background-image: $main-gradient;
+    width: calc(100% + 100px);
+    height: 3px;
+  }
+
+  @media (max-width: 650px) {
+    font-size: 6vw;
+  }
+}
+
+.header {
+  color: $light-text-primary;
+  font-size: 2rem;
+}
