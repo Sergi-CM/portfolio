@@ -12,3 +12,15 @@ $light-text-hover: #111827;
 // Background
 
 $light-bg-main: #f9fafb;
+
+//Main gradient
+
+$main-gradient: linear-gradient(
+  90deg,
+  rgba(0, 215, 255, 1) 0%,
+  rgba(0, 224, 98, 1) 100%
+);
+
+// Distances
+
+$body-width: 900px;
