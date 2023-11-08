@@ -1,0 +1,35 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.button {
+  color: $light-text-secondary;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  color: $light-text-secondary;
+  font-weight: 500;
+
+  transition: all 0.15s;
+
+  &:hover,
+  &:active {
+    @include link-hover;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    font-weight: bold;
+    height: 0;
+    width: 155px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+}
+
+.border {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: $main-gradient;
+}
