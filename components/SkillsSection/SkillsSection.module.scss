@@ -1,0 +1,19 @@
+@import "styles/variables.scss";
+
+.section {
+  width: $body-width;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+}
+
+.lists-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
