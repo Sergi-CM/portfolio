@@ -21,40 +21,52 @@ const Header = (): JSX.Element => {
   };
 
   return (
-    <motion.header
-      className={styles.header}
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      <h1 className={styles.logo}>Sergi Casquero</h1>
+    <>
+      <motion.header
+        className={styles.header}
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className={styles.logo}>Sergi Casquero</h1>
 
-      <nav className={styles.links}>
-        {links.map((link) => (
-          <Link key={link.name} href={link.hash} className={styles.link}>
-            {link.name}
-          </Link>
-        ))}
-      </nav>
+        <nav className={styles.links}>
+          {links.map((link) => (
+            <Link key={link.name} href={link.hash} className={styles.link}>
+              {link.name}
+            </Link>
+          ))}
+        </nav>
 
-      <div className={styles["dark-mode-toggle"]}>
-        <DarkModeToggle
+        <div className={styles["dark-mode-toggle"]}>
+          <DarkModeToggle
+            isDarkMode={isDarkMode}
+            toggleDarkMode={toggleDarkMode}
+          />
+        </div>
+
+        <button className={styles.burger} onClick={toggleSideMenu}>
+          <FiMenu />
+        </button>
+
+        <SideMenu
+          isOpen={isSideMenuOpen}
+          closeMenu={toggleSideMenu}
           isDarkMode={isDarkMode}
           toggleDarkMode={toggleDarkMode}
         />
-      </div>
+      </motion.header>
 
-      <button className={styles.burger} onClick={toggleSideMenu}>
-        <FiMenu />
-      </button>
-
-      <SideMenu
-        isOpen={isSideMenuOpen}
-        closeMenu={toggleSideMenu}
-        isDarkMode={isDarkMode}
-        toggleDarkMode={toggleDarkMode}
-      />
-    </motion.header>
+      {isSideMenuOpen && (
+        <motion.div
+          className={styles.overlay}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+        ></motion.div>
+      )}
+    </>
   );
 };
 
