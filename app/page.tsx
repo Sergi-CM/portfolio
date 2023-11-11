@@ -1,4 +1,4 @@
-import { ExperienceSection, Hero } from "@/components";
+import { ExperienceSection, Hero, SkillsSection } from "@/components";
 import styles from "./page.module.scss";
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
     <main className={styles.main}>
       <Hero />
       <ExperienceSection />
+      <SkillsSection />
     </main>
   );
 };
