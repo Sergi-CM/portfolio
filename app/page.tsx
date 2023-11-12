@@ -1,12 +1,20 @@
-import { ExperienceSection, Hero, SkillsSection } from "@/components";
+import {
+  ExperienceSection,
+  Hero,
+  ProjectsSection,
+  SkillsSection,
+} from "@/components";
 import styles from "./page.module.scss";
 
 const Home = () => {
   return (
     <main className={styles.main}>
       <Hero />
-      <ExperienceSection />
-      <SkillsSection />
+      <div className={styles["sections-wrapper"]}>
+        <ExperienceSection />
+        <ProjectsSection />
+        <SkillsSection />
+      </div>
     </main>
   );
 };

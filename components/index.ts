@@ -8,3 +8,5 @@ export { default as ExperienceSection } from "./ExperienceSection/ExperienceSect
 export { default as JobCard } from "./JobCard/JobCard";
 export { default as SkillsSection } from "./SkillsSection/SkillsSection";
 export { default as SkillsCard } from "./SkillsCard/SkillsCard";
+export { default as ProjectCard } from "./ProjectCard/ProjectCard";
+export { default as ProjectsSection } from "./ProjectsSection/ProjectsSection";
