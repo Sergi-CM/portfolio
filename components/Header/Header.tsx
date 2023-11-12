@@ -22,12 +22,7 @@ const Header = (): JSX.Element => {
 
   return (
     <>
-      <motion.header
-        className={styles.header}
-        initial={{ y: -100, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-      >
+      <header className={styles.header}>
         <h1 className={styles.logo}>Sergi Casquero</h1>
 
         <nav className={styles.links}>
@@ -55,7 +50,7 @@ const Header = (): JSX.Element => {
           isDarkMode={isDarkMode}
           toggleDarkMode={toggleDarkMode}
         />
-      </motion.header>
+      </header>
 
       {isSideMenuOpen && (
         <motion.div
