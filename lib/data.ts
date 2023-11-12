@@ -1,3 +1,6 @@
+import projectsImages from "./projectsImages";
+import skillsImages from "./skillsImages";
+
 export const links = [
   {
     name: "Home",
@@ -69,6 +72,116 @@ export const experience = [
     description: [
       "Designed and developed small websites to facilitate project presentations.",
       "Promoted to lead designer after a year and a half, with responsibilities including supervising colleagues’ designs and presentations quality.",
+    ],
+  },
+];
+
+export const skillsData = [
+  {
+    title: "Foundational Skills",
+    skills: [
+      { name: "HTML", image: skillsImages.html },
+      { name: "CSS", image: skillsImages.css },
+      { name: "JavaScript", image: skillsImages.javascript },
+      { name: "TypeScript", image: skillsImages.typescript },
+    ],
+  },
+  {
+    title: "Frontend Development",
+    skills: [
+      { name: "React", image: skillsImages.react },
+      { name: "Redux", image: skillsImages.redux },
+      { name: "Vue", image: skillsImages.vue },
+      { name: "Next.js", image: skillsImages.nextjs },
+      { name: "Tailwind", image: skillsImages.tailwind },
+      { name: "Sass", image: skillsImages.sass },
+      { name: "Styled Comp.", image: skillsImages.styledComponents },
+      { name: "Material UI", image: skillsImages.materialui },
+      { name: "Vutetify", image: skillsImages.vuetify },
+      { name: "Figma", image: skillsImages.figma },
+      { name: "GraphQL", image: skillsImages.graphql },
+      { name: "Joi", image: skillsImages.joi },
+      { name: "Storybook", image: skillsImages.storybook },
+      { name: "Framer Motion", image: skillsImages.framerMotion },
+    ],
+  },
+  {
+    title: "Backend & Content Management",
+    skills: [
+      { name: "Node.js", image: skillsImages.nodejs },
+      { name: "Express", image: skillsImages.express },
+      { name: "MongoDB", image: skillsImages.mongodb },
+      { name: "Supabase", image: skillsImages.supabase },
+      { name: "Sanity", image: skillsImages.sanity },
+      { name: "Contentful", image: skillsImages.contentful },
+    ],
+  },
+  {
+    title: "Testing & QA",
+    skills: [
+      { name: "Cypress", image: skillsImages.cypress },
+      { name: "Enzyme", image: skillsImages.enzyme },
+      { name: "Jest", image: skillsImages.jest },
+      { name: "React TL", image: skillsImages.reactTestingLibrary },
+      { name: "Vitest", image: skillsImages.vitest },
+      { name: "Postman", image: skillsImages.postman },
+    ],
+  },
+  {
+    title: "DevOps & Build Tools",
+    skills: [
+      { name: "Git", image: skillsImages.git },
+      { name: "GitHub", image: skillsImages.github },
+      { name: "GitLab", image: skillsImages.gitlab },
+      { name: "ESLint", image: skillsImages.eslint },
+      { name: "SonarCloud", image: skillsImages.sonarcloud },
+      { name: "Docker", image: skillsImages.docker },
+      { name: "Vite", image: skillsImages.vite },
+    ],
+  },
+  {
+    title: "Project Management",
+    skills: [
+      { name: "Linear", image: skillsImages.linear },
+      { name: "Slack", image: skillsImages.slack },
+      { name: "Trello", image: skillsImages.trello },
+      { name: "Jira", image: skillsImages.jira },
+      { name: "Confluence", image: skillsImages.confluence },
+    ],
+  },
+];
+
+export const projects = [
+  {
+    title: "Threads App Clone",
+    description:
+      "A Threads app clone, including some core features such as post creation, comments, profile editing, user sign up and login, and efficient search for communities and threads.",
+    image: projectsImages.threads,
+    skills: [
+      {
+        name: "TypeScript",
+        image: skillsImages.typescript,
+      },
+      {
+        name: "React",
+        image: skillsImages.react,
+      },
+      {
+        name: "Next",
+        image: skillsImages.nextjs,
+      },
+      {
+        name: "Tailwind",
+        image: skillsImages.tailwind,
+      },
+      {
+        name: "Sanity",
+        image: skillsImages.sanity,
+      },
+      {
+        name: "MongoDB",
+        image: skillsImages.mongodb,
+      },
     ],
   },
 ];
