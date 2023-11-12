@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./Hero.module.scss";
@@ -8,18 +7,14 @@ import { Button } from "..";
 
 const Hero = () => {
   return (
-    <motion.section
-      className={styles.section}
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-    >
+    <section className={styles.section} id="home">
       <Image
         src="/img/portrait.webp"
         alt="hero image"
         className={styles.portrait}
-        width={200}
-        height={200}
+        width={250}
+        height={250}
+        priority={true}
       />
 
       <div className={styles.texts}>
@@ -54,7 +49,7 @@ const Hero = () => {
           <Button text={"Download CV"} href={"#"} border={false} />
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 };
 

@@ -1,10 +1,10 @@
-import skillsData from "./skillsData";
+import { skillsData } from "@/lib/data";
 import styles from "./SkillsSection.module.scss";
 import { SectionHeader, SkillsCard } from "..";
 
 const SkillsSection = (): JSX.Element => {
   return (
-    <section className={styles.section}>
+    <section id="skills" className={styles.section}>
       <SectionHeader text="Skills" />
 
       <ul className={styles["lists-wrapper"]}>

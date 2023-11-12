@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 70px;
+  padding: 0 30px;
+}
 
-  padding: 30px;
-  padding-top: 170px;
+.sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 90px;
 }

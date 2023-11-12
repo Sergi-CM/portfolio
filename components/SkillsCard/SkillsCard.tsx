@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import styles from "./SkillsCard.module.scss";
+import { motion } from "framer-motion";
 
 interface SkillsCardProps {
   title: string;
@@ -29,9 +30,14 @@ const SkillsCard = ({ title, skills }: SkillsCardProps): JSX.Element => {
         </span>
       </div>
       {isOpen && (
-        <ul className={styles["skills-wrapper"]}>
+        <motion.ul
+          className={styles["skills-wrapper"]}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
           {skills.map((skill) => (
-            <li key={skill.name} className={styles.skill}>
+            <motion.li key={skill.name} className={styles.skill}>
               <Image
                 src={skill.image}
                 alt={skill.name}
@@ -39,9 +45,9 @@ const SkillsCard = ({ title, skills }: SkillsCardProps): JSX.Element => {
                 width={70}
               />
               <span>{skill.name}</span>
-            </li>
+            </motion.li>
           ))}
-        </ul>
+        </motion.ul>
       )}
     </article>
   );
