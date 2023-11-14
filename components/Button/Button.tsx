@@ -1,6 +1,5 @@
 import Link from "next/link";
 import styles from "./Button.module.scss";
-import { FiMail } from "react-icons/fi";
 
 interface ButtonProps {
   text: string;
