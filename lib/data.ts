@@ -98,9 +98,11 @@ export const skillsData = [
       { name: "Styled Comp.", image: skillsImages.styledComponents },
       { name: "Material UI", image: skillsImages.materialui },
       { name: "Vutetify", image: skillsImages.vuetify },
+      { name: "Shadcn/ui", image: skillsImages.shadcn },
       { name: "Figma", image: skillsImages.figma },
       { name: "GraphQL", image: skillsImages.graphql },
       { name: "Joi", image: skillsImages.joi },
+      { name: "Clerk", image: skillsImages.clerk },
       { name: "Storybook", image: skillsImages.storybook },
       { name: "Framer Motion", image: skillsImages.framerMotion },
     ],
@@ -155,7 +157,7 @@ export const projects = [
   {
     title: "Threads App Clone",
     description:
-      "A Threads app clone, including some core features such as post creation, comments, profile editing, user sign up and login, and efficient search for communities and threads.",
+      "A Threads app clone with all the essentials: post creation, comments, profile tweaks, user sign up and login, and a slick search for communities and threads. 🚀",
     image: projectsImages.threads,
     skills: [
       {
@@ -175,12 +177,40 @@ export const projects = [
         image: skillsImages.tailwind,
       },
       {
-        name: "Sanity",
-        image: skillsImages.sanity,
+        name: "Clerk",
+        image: skillsImages.clerk,
       },
       {
         name: "MongoDB",
         image: skillsImages.mongodb,
+      },
+    ],
+  },
+  {
+    title: "Battleship",
+    description:
+      "Throwback to 2017 – my early days in coding. Built a 'Player vs CPU' Battleship game with a basic AI, all crafted with plain old JavaScript. Just a heads up, it's desktop-only. 😎",
+    image: projectsImages.battleship,
+    skills: [
+      {
+        name: "JavaScript",
+        image: skillsImages.javascript,
+      },
+      {
+        name: "Sass",
+        image: skillsImages.sass,
+      },
+    ],
+  },
+  {
+    title: "Pasapalabra - Doom Edition",
+    description:
+      "Yeah, it's got some bugs and the code is a bit of a mess. But hey, it was my first coding gig, and I had to throw it into my portfolio! Imagine a mashup of Pasapalabra and the OG Doom game. 💥",
+    image: projectsImages.pasapalabra,
+    skills: [
+      {
+        name: "JavaScript",
+        image: skillsImages.javascript,
       },
     ],
   },

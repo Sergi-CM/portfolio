@@ -1,3 +1,4 @@
+import clerk from "@/public/img/skills/clerk.png";
 import confluence from "@/public/img/skills/confluence.svg";
 import contentful from "@/public/img/skills/contentful.svg";
 import css from "@/public/img/skills/css3.svg";
@@ -27,6 +28,7 @@ import react from "@/public/img/skills/react.svg";
 import redux from "@/public/img/skills/redux.svg";
 import sanity from "@/public/img/skills/sanity.png";
 import sass from "@/public/img/skills/sass.svg";
+import shadcn from "@/public/img/skills/shadcn.png";
 import slack from "@/public/img/skills/slack.svg";
 import sonarcloud from "@/public/img/skills/sonarcloud.svg";
 import storybook from "@/public/img/skills/storybook.svg";
@@ -42,6 +44,7 @@ import vue from "@/public/img/skills/vuejs.svg";
 import vuetify from "@/public/img/skills/vuetify.svg";
 
 const skillsImages = {
+  clerk,
   confluence,
   contentful,
   css,
@@ -71,6 +74,7 @@ const skillsImages = {
   redux,
   sanity,
   sass,
+  shadcn,
   slack,
   sonarcloud,
   storybook,
