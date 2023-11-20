@@ -1,10 +1,16 @@
+"use client";
+
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { SectionHeader } from "..";
 import styles from "./AboutSection.module.scss";
+import useSectionInView from "@/hooks/useSectionInView";
 
 const AboutSection = () => {
+  const { ref } = useSectionInView("About");
+
   return (
-    <section id="about" className={styles.section}>
+    <section ref={ref} id="about" className={styles.section}>
       <SectionHeader text="About Me" />
 
       <div className={styles["content-wrapper"]}>

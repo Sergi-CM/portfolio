@@ -1,10 +1,15 @@
+"use client";
+
 import { skillsData } from "@/lib/data";
 import styles from "./SkillsSection.module.scss";
 import { SectionHeader, SkillsCard } from "..";
+import useSectionInView from "@/hooks/useSectionInView";
 
 const SkillsSection = (): JSX.Element => {
+  const { ref } = useSectionInView("Skills");
+
   return (
-    <section id="skills" className={styles.section}>
+    <section ref={ref} id="skills" className={styles.section}>
       <SectionHeader text="Skills" />
 
       <ul className={styles["lists-wrapper"]}>

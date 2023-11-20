@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "@/styles/resetStyles.scss";
 import styles from "./layout.module.scss";
 import { Header } from "@/components";
+import { ActiveSectionContextProvider } from "@/context/activeSectionContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={styles.html}>
       <body className={`${inter.className} ${styles.body}`}>
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
