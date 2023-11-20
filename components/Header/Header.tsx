@@ -7,8 +7,12 @@ import { FiMenu } from "react-icons/fi";
 import styles from "./Header.module.scss";
 import { links } from "@/lib/data";
 import { DarkModeToggle, SideMenu } from "..";
+import { useActiveSectionContext } from "@/context/activeSectionContext";
 
 const Header = (): JSX.Element => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -27,7 +31,16 @@ const Header = (): JSX.Element => {
 
         <nav className={styles.links}>
           {links.map((link) => (
-            <Link key={link.name} href={link.hash} className={styles.link}>
+            <Link
+              key={link.name}
+              href={link.hash}
+              className={`${styles.link} ${
+                activeSection === link.name ? styles["active-section"] : ""
+              }`}
+              onClick={() => {
+                setActiveSection(link.name), setTimeOfLastClick(Date.now());
+              }}
+            >
               {link.name}
             </Link>
           ))}

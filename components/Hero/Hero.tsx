@@ -4,10 +4,13 @@ import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import styles from "./Hero.module.scss";
 import { Button } from "..";
+import useSectionInView from "@/hooks/useSectionInView";
 
 const Hero = () => {
+  const { ref } = useSectionInView("Home");
+
   return (
-    <section className={styles.section} id="home">
+    <section ref={ref} className={styles.section} id="home">
       <Image
         src="/img/portrait.webp"
         alt="hero image"
