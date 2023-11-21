@@ -1,0 +1,41 @@
+@import "styles/variables.scss";
+
+.input-field {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  input,
+  textarea {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px 18px;
+    background-color: $light-bg-main;
+
+    &::placeholder {
+      color: #bbb;
+    }
+
+    &:focus {
+      outline: none;
+      border: 2px solid;
+      border-image-slice: 1;
+      border-width: 2px;
+      border-image-source: $main-gradient;
+    }
+  }
+
+  input {
+    width: 50%;
+
+    @media (max-width: 850px) {
+      width: 100%;
+    }
+  }
+}
