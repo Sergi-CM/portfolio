@@ -41,8 +41,8 @@ const SkillsCard = ({ title, skills }: SkillsCardProps): JSX.Element => {
               <Image
                 src={skill.image}
                 alt={skill.name}
-                height={70}
-                width={70}
+                height={60}
+                width={60}
               />
               <span>{skill.name}</span>
             </motion.li>

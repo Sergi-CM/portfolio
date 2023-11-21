@@ -6,6 +6,7 @@ import {
 } from "@/components";
 import styles from "./page.module.scss";
 import AboutSection from "@/components/AboutSection/AboutSection";
+import ContactSection from "@/components/ContactSection/ContactSection";
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <ExperienceSection />
         <ProjectsSection />
         <SkillsSection />
+        <ContactSection />
       </div>
     </main>
   );

@@ -10,7 +10,7 @@ const ProjectsSection = () => {
 
   return (
     <section ref={ref} id="projects" className={styles.section}>
-      <SectionHeader text="Personal Projects" />
+      <SectionHeader text="Side Projects" />
       <ul className={styles["projects-wrapper"]}>
         {projects.map((project) => (
           <li key={project.title}>
