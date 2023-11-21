@@ -1,0 +1,45 @@
+@import "styles/variables.scss";
+@import "styles/mixins.scss";
+
+.form-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.submit-button {
+  padding: 10px;
+  width: 50%;
+  cursor: pointer;
+
+  text-align: center;
+  font-weight: 500;
+  color: $light-text-secondary;
+
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: $main-gradient;
+
+  transition: all 0.15s;
+
+  &:hover,
+  &:active {
+    @include link-hover;
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    font-weight: bold;
+    height: 0;
+    width: 115px;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  @media (max-width: 850px) {
+    width: 100%;
+  }
+}
