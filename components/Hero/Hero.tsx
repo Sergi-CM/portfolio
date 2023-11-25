@@ -2,9 +2,11 @@
 
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
+import Link from "next/link";
 import styles from "./Hero.module.scss";
 import { Button } from "..";
 import useSectionInView from "@/hooks/useSectionInView";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Hero = () => {
   const { ref } = useSectionInView("Home");
@@ -50,6 +52,12 @@ const Hero = () => {
         <div className={styles["buttons-wrapper"]}>
           <Button text={"Contact Me"} href={"#contact"} border={true} />
           <Button text={"Download CV"} href={"#"} border={false} />
+          <Link href={""} className={styles["social-icon"]}>
+            <FaLinkedin />
+          </Link>
+          <Link href={""} className={styles["social-icon"]}>
+            <FaGithub />
+          </Link>
         </div>
       </div>
     </section>
