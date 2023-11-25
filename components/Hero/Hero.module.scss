@@ -40,6 +40,11 @@
 .portrait {
   margin-top: 10px;
   border-radius: 50%;
+
+  @media (max-width: 850px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .buttons-wrapper {
@@ -67,12 +72,12 @@
   }
 }
 
-.linkedin {
-  font-size: 2.2rem;
-  color: rgb(0, 215, 255);
-}
+.social-icon {
+  font-size: 2rem;
+  color: rgb(87, 87, 87);
+  margin: 0 10px;
 
-.github {
-  font-size: 2.2rem;
-  color: rgb(0, 224, 98);
+  @media (max-width: 650px) {
+    display: none;
+  }
 }
